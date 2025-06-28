@@ -898,6 +898,20 @@
                 <button id="game13-button" onclick="openGame('pen')">Open</button>
             </div>
         </div>
+        <div class="game">
+            <img src="aviamast.webp" alt="AviaMasters Preview">
+            <div class="game-info">
+                <h3 id="game-title">AviaMasters</h3>
+                <button id="game13-button" onclick="openGame('aviam')">Open</button>
+            </div>
+        </div>
+        <div class="game">
+            <img src="thi.png" alt="KingThimbles Preview">
+            <div class="game-info">
+                <h3 id="game-title">KingThimbles</h3>
+                <button id="game13-button" onclick="openGame('kingt')">Open</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1707,6 +1721,14 @@ function openGame(game) {
         pen: {
             ios: 'penalty1w/index.html',
             other: 'penalty1w/index.html'
+        },
+        aviam: {
+            ios: 'aviamast/index.html',
+            other: 'aviamast/index.html'
+        },
+        kingt: {
+            ios: 'king/index.html',
+            other: 'king/index.html'
         }
     };
             var url = isIOS ? links[game].ios : links[game].other;
