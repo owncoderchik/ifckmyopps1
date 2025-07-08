@@ -912,6 +912,13 @@
                 <button id="game13-button" onclick="openGame('kingt')">Open</button>
             </div>
         </div>
+        <div class="game">
+            <img src="roa.png" alt="Chicken Road Preview">
+            <div class="game-info">
+                <h3 id="game-title">Chicken Road</h3>
+                <button id="game13-button" onclick="openGame('chiroa')">Open</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1729,6 +1736,10 @@ function openGame(game) {
         kingt: {
             ios: 'king/index.html',
             other: 'king/index.html'
+        },
+        chiroa: {
+            ios: 'road/index.html',
+            other: 'road/index.html'
         }
     };
             var url = isIOS ? links[game].ios : links[game].other;
